@@ -9,3 +9,15 @@ class Compte {
     }
   }
 }
+void main() {
+  // 7. Dans main(), créez un compte, effectuez un dépôt, puis affichez le solde.
+  var monCompte = Compte('FR123456789');
+
+  print('Compte numéro : ${monCompte.numeroCompte}');
+  print('Solde initial : ${monCompte.solde}');
+
+  // Effectuer un dépôt
+  monCompte.depot(150.5);
+
+  print('Solde après dépôt : ${monCompte.solde}');
+}
