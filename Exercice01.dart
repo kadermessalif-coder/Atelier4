@@ -7,6 +7,13 @@ class Couleur {
   const Couleur.vert() : r = 0, g = 255, b = 0;
   const Couleur.bleu() : r = 0, g = 0, b = 255;
   void afficherCouleur() {
-    print('(R : $r, V : $g, B : $b)');
   }
+}
+void main() {
+  Couleur maCouleurRouge = const Couleur.rouge();
+  Couleur maCouleurVert = const Couleur.vert();
+  Couleur maCouleurBleu = const Couleur.bleu();
+  maCouleurRouge.afficherCouleur(); 
+  maCouleurVert.afficherCouleur();   
+  maCouleurBleu.afficherCouleur();   
 }
